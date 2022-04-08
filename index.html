@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive Slides</title>
+</head>
+<body onload="slider()">
+    <main>
+        <div class="slideshow" id="slideshow">
+            <div class="slideshow-item">
+                <img src="images/image-1.jpg" alt="image 1" />
+            </div>
+            <div class="slideshow-item">
+                <img src="images/image-2.jpg" alt="image 2" />
+            </div>
+            <div class="slideshow-item">
+                <img src="images/image-3.jpg" alt="image 3" />
+            </div>
+            <div class="slideshow-item">
+                <img src="images/image-4.jpg" alt="image 4" />
+            </div>
+            <div class="slideshow-item">
+                <img src="images/image-5.jpg" alt="image 5" />
+            </div>            
+        </div>
+        <div class="slideshow-navigation">
+            <div class="previous">
+                <button onclick="navigatePrevious()" type="button"><</button>
+            </div>            
+            <div class="next">
+                <button onclick="navigateNext()" type="button">></button>
+            </div>
+        </div>
+        <div class="navigation-dots">
+            <div class="dots active" id="dot0" onclick="navigateTo(0)">.</div>
+            <div class="dots" id="dot1" onclick="navigateTo(1)">.</div>
+            <div class="dots" id="dot2" onclick="navigateTo(2)">.</div>
+            <div class="dots" id="dot3" onclick="navigateTo(3)">.</div>
+            <div class="dots" id="dot4" onclick="navigateTo(4)">.</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
